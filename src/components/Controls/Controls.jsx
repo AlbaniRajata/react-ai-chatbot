@@ -1,4 +1,5 @@
 import { useState } from "react";
+import TextareaAutosize from "react-textarea-autosize";
 import styles from "./Controls.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
@@ -27,10 +28,12 @@ export function Controls({ onSend }) {
   return (
     <div className={styles.Controls}>
       <div className={styles.TextAreaContainer}>
-        <textarea
+        <TextareaAutosize
           className={styles.TextArea}
           placeholder="Message AI Chatbot"
           value={content}
+          minRows={1}
+          maxRows={4}
           onChange={handleContentChange}
           onKeyDown={handleEnterPress}
         />
