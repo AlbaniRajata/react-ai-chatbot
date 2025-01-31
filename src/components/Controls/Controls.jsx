@@ -4,7 +4,7 @@ import styles from "./Controls.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
-export function Controls({ onSend }) {
+export function Controls({ isDisabled = false, onSend }) {
   const [content, setContent] = useState("");
 
   function handleContentChange(event) {
@@ -30,6 +30,7 @@ export function Controls({ onSend }) {
       <div className={styles.TextAreaContainer}>
         <TextareaAutosize
           className={styles.TextArea}
+          disabled={isDisabled}
           placeholder="Message AI Chatbot"
           value={content}
           minRows={1}
@@ -38,7 +39,11 @@ export function Controls({ onSend }) {
           onKeyDown={handleEnterPress}
         />
       </div>
-      <button className={styles.Button} onClick={handleContentSend}>
+      <button 
+        className={styles.Button}
+        disabled={isDisabled}
+        onClick={handleContentSend}
+      >
         <FontAwesomeIcon icon={faPaperPlane} />
       </button>
     </div>
