@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styles from "./Controls.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 export function Controls({ onSend }) {
   const [content, setContent] = useState("");
@@ -33,7 +35,9 @@ export function Controls({ onSend }) {
           onKeyDown={handleEnterPress}
         />
       </div>
-      <button className={styles.Button} onClick={handleContentSend}>-> </button>
+      <button className={styles.Button} onClick={handleContentSend}>
+        <FontAwesomeIcon icon={faPaperPlane} />
+      </button>
     </div>
   );
 }
