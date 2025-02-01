@@ -62,23 +62,6 @@ npm run dev
 
 ---
 
-## 📌 **Recent Updates**  
-
-📅 **Jan 31, 2025**  
-- 🔗 **Connected Google AI & OpenAI for real-time chat streaming**  
-- 🌙 **Added Dark Mode support**  
-- 🔄 **Enabled auto-scrolling for new messages**  
-- ✍ **Applied auto-focus to text input for a smoother experience**  
-- 🔒 **Disabled chat controls during message loading**  
-- 📜 **Integrated Markdown support for chat messages**  
-- ⏳ **Displayed loading state while fetching AI responses**  
-
-📅 **Jan 30, 2025**  
-- 🏗 **Initial project setup with app layout and message handling**  
-- 💬 **Implemented chat input and send button**  
-- 🛠 **Structured Google AI logic for reusability**  
-
----
 
 ## 🎯 **What I Learned**  
 
