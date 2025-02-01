@@ -1,8 +1,90 @@
-# React + Vite
+# 🤖 React AI Chatbot  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React Vite-powered AI chatbot** that integrates **Google AI (Gemini) and OpenAI** to enable real-time, intelligent conversations. This chatbot provides a seamless chatting experience with features like **markdown support, dark mode, auto-scrolling, and real-time streaming responses**.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 **Features**  
+
+✔ **Real-Time AI Chat Streaming** – Messages are streamed instantly from AI models  
+✔ **Supports Google AI (Gemini) & OpenAI** – Switch between AI models for responses  
+✔ **Markdown Formatting** – Display AI-generated responses in rich text format  
+✔ **Dark Mode Support** – Enhances user experience with theme switching  
+✔ **Auto-Resizing Input Field** – Adjusts dynamically to user input  
+✔ **Auto-Scrolling Messages** – Ensures the latest messages are always in view  
+✔ **Disabled Controls During Loading** – Prevents unwanted interactions while waiting for responses  
+
+---
+
+## 🛠 **Tech Stack**  
+
+### **Frontend:**  
+- React (Vite) – Fast and optimized development  
+- React Markdown – Renders AI responses with markdown support  
+- Font Awesome – UI enhancements with icons  
+- React Textarea Autosize – Smooth text input resizing  
+
+### **AI Services:**  
+- Google AI (Gemini) – Natural language understanding and conversation capabilities  
+- OpenAI API – Smart and context-aware chat responses  
+
+### **Development Tools:**  
+- ESLint – Code quality and consistency  
+- Vite – Optimized build and development environment  
+
+---
+
+## ⚙️ **Installation & Setup**  
+
+1️⃣ **Clone the repository:**  
+```bash
+git clone https://github.com/yourusername/react-ai-chatbot.git
+cd react-ai-chatbot
+```  
+
+2️⃣ **Install dependencies:**  
+```bash
+npm install
+```  
+
+3️⃣ **Set up environment variables:**  
+- Create a `.env` file in the root directory  
+- Add your API keys:  
+```plaintext
+VITE_OPENAI_API_KEY=your_openai_api_key
+VITE_GOOGLE_AI_API_KEY=your_google_ai_api_key
+```  
+
+4️⃣ **Run the development server:**  
+```bash
+npm run dev
+```  
+
+---
+
+## 📌 **Recent Updates**  
+
+📅 **Jan 31, 2025**  
+- 🔗 **Connected Google AI & OpenAI for real-time chat streaming**  
+- 🌙 **Added Dark Mode support**  
+- 🔄 **Enabled auto-scrolling for new messages**  
+- ✍ **Applied auto-focus to text input for a smoother experience**  
+- 🔒 **Disabled chat controls during message loading**  
+- 📜 **Integrated Markdown support for chat messages**  
+- ⏳ **Displayed loading state while fetching AI responses**  
+
+📅 **Jan 30, 2025**  
+- 🏗 **Initial project setup with app layout and message handling**  
+- 💬 **Implemented chat input and send button**  
+- 🛠 **Structured Google AI logic for reusability**  
+
+---
+
+## 🎯 **What I Learned**  
+
+- Optimizing **real-time AI streaming** with Google AI & OpenAI  
+- Enhancing **user experience** with **dark mode and auto-scrolling**  
+- Structuring **clean and reusable AI logic**  
+- Improving UI responsiveness with **auto-resizable text fields**  
+
+---
